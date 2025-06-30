@@ -1,0 +1,14 @@
+{
+    "name": "qmk_firmware",
+    "module": "index.ts",
+    "type": "module",
+    "scripts": {
+        "build-macropad": "qmk compile -kb framework/macropad -km scott"
+    },
+    "devDependencies": {
+        "@types/bun": "latest"
+    },
+    "peerDependencies": {
+        "typescript": "^5.0.0"
+    }
+}
