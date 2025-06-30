@@ -1,3 +1,7 @@
+## My fork notes
+* Use branch `scott` branched off `fl16-v0.2.8-prep`
+* Compile to `./.build` for `.uf2` file: `qmk compile -kb framework/macropad -km scott`
+
 # THIS IS THE DEVELOP BRANCH
 
 Warning- This is the `develop` branch of QMK Firmware. You may encounter broken code here. Please see [Breaking Changes](https://docs.qmk.fm/#/breaking_changes) for more information.
