@@ -5,6 +5,7 @@ RGB_MATRIX_EFFECT(layer_0_effect)
 RGB_MATRIX_EFFECT(layer_1_effect)
 RGB_MATRIX_EFFECT(layer_2_effect)
 RGB_MATRIX_EFFECT(layer_3_effect)
+RGB_MATRIX_EFFECT(layer_4_effect)
 
 // Step 2.
 // Define effects inside the `RGB_MATRIX_CUSTOM_EFFECT_IMPLS` ifdef block
@@ -179,7 +180,7 @@ static bool layer_2_effect(effect_params_t* params) {
     return rgb_matrix_check_finished_leds(led_max);
 }
 
-static bool layer_21_effect(effect_params_t* params) {
+static bool layer_4_effect(effect_params_t* params) {
     RGB_MATRIX_USE_LIMITS(led_min, led_max);
     for (uint8_t i = led_min; i < led_max; i++) {
         switch (i) {

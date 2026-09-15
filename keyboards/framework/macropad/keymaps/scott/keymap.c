@@ -98,14 +98,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_P0,   KC_P0,   KC_PDOT, KC_PENT
     ),
     [2] = LAYOUT(
-        TO(0),  TO(1), TO(21),  TO(3),
+        TO(0),  TO(1), TO(4),  TO(3),
         LCTL(KC_F1),  LCTL(KC_F2), LCTL(KC_F3), LCTL(KC_F4),
         LCTL(KC_F5),   LCTL(KC_F6),   LCTL(KC_F7),   LCTL(KC_F8),
         SEND_DESK_1,  SEND_DESK_2, SEND_DESK_3, SEND_DESK_4,
         SEND_DESK_5,  SEND_DESK_6, SEND_DESK_7, SEND_DESK_8,
         KC_P0,   KC_P0,   KC_PDOT, KC_PENT
     ),
-    [21] = LAYOUT(
+    [4] = LAYOUT(
         TO(0),  TO(1), TO(2),  TO(3),
         LCTL(KC_F1),  LCTL(KC_F2), LCTL(KC_F3), LCTL(KC_F4),
         LCTL(KC_F5),   LCTL(KC_F6),   LCTL(KC_F7),   LCTL(KC_F8),
@@ -140,8 +140,8 @@ layer_state_t layer_state_set_user(layer_state_t state){
         case 2:
             rgb_matrix_mode(RGB_MATRIX_CUSTOM_layer_2_effect);
             break;
-        case 21:
-            rgb_matrix_mode(RGB_MATRIX_CUSTOM_layer_21_effect);
+        case 4:
+            rgb_matrix_mode(RGB_MATRIX_CUSTOM_layer_4_effect);
             break;
         case 3:
             rgb_matrix_mode(RGB_MATRIX_CUSTOM_layer_3_effect);
