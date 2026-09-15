@@ -179,6 +179,26 @@ static bool layer_2_effect(effect_params_t* params) {
     return rgb_matrix_check_finished_leds(led_max);
 }
 
+static bool layer_21_effect(effect_params_t* params) {
+    RGB_MATRIX_USE_LIMITS(led_min, led_max);
+    for (uint8_t i = led_min; i < led_max; i++) {
+        switch (i) {
+            case 22:
+                rgb_matrix_set_color(i, 0x20, 0x00, 0x00);
+                break;
+            case 5:
+            case 2:
+            case 17:
+                rgb_matrix_set_color(i, 0x05, 0x05, 0x05);
+                break;
+            default:
+                rgb_matrix_set_color(i, RGB_OFF);
+                break;
+        }
+    }
+    return rgb_matrix_check_finished_leds(led_max);
+}
+
 static bool layer_3_effect(effect_params_t* params) {
     RGB_MATRIX_USE_LIMITS(led_min, led_max);
     for (uint8_t i = led_min; i < led_max; i++) {
